@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키보드로 캐릭터 이동</title>
+    <link rel="stylesheet" href="../css/character.css" />
+</head>
+<body>
+    <div id="nameForm">
+        <h2>닉네임을 입력하세요</h2>
+        <input type="text" id="characterName" placeholder="이름을 입력하세요" />
+        
+        <h3>캐릭터를 선택하세요</h3>
+        <div id="characterSelect">
+          <label><input type="radio" name="character" value="caterpillar.png" checked> 애벌레</label>
+          <label><input type="radio" name="character" value="snail.png"> 달팽이</label>
+          <label><input type="radio" name="character" value="ant.png"> 개미</label>
+          <label><input type="radio" name="character" value="worm.png"> 지렁이</label>
+        </div>
+        
+        <button id="startGame">게임 시작</button>
+        
+    </div>
+    
+    <div id="gameArea">
+        <h1>키보드로 캐릭터 이동</h1>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="../js/character.js"></script>
+</html>
